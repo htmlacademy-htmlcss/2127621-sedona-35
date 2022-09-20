@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Roman Danilevskij](https://up.htmlacademy.ru/htmlcss/35/user/2127621).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
