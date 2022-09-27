@@ -2,16 +2,16 @@
   text-align: center;
 }
 .main-logo {
-  background: url("/images/main-logo-zigzag.png") center bottom/1200px 57px no-repeat, url("/images/main-logo.jpg") center top/1200px 485px no-repeat;
+  background: url("../images/main-logo-zigzag.png") center bottom/1200px 57px no-repeat, url("../images/main-logo.jpg") center top/1200px 485px no-repeat;
   height: 485px;
 }
 .advantages-list li:nth-child(2){
-  background-image: url(/images/main-logo-real-city.jpg);
+  background-image: url(../images/main-logo-real-city.jpg);
   height: 384px;
   width: 800px;
 }
 .advantages-list li:nth-child(6){
-  background-image: url(/images/main-logo-bridge.jpg);
+  background-image: url(../images/main-logo-bridge.jpg);
   height: 384px;
   width: 800px;
 }
