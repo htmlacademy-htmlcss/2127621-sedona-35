@@ -253,3 +253,18 @@ body {
   text-transform: uppercase;
   color: #333333;
 }
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+.pagination-current {
+  color: #000000;
+  background: #F2F2F2;
+}
