@@ -33,7 +33,7 @@ body {
 .navigation-link,
 .pagination-link {
   text-decoration: none;
-  color: #000000;
+  color: inherit;
 }
 
 .navigation-user-list,
@@ -218,6 +218,18 @@ body {
   text-decoration: none;
 }
 
+.button-favourites {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  border: none;
+}
+
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
@@ -225,5 +237,19 @@ body {
 
 .hotel-value,
 .hotel-price {
+  color: #333333;
+}
+
+.hotel-stars {
+  width: 20px;
+  height: 20px;
+  background: url("../images/catalog-star.svg") 0 0/18px 17px no-repeat;
+}
+
+.hotel-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   color: #333333;
 }
