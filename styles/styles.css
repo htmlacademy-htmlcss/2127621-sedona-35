@@ -20,9 +20,11 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #000000;
-  /*background-color: #FFFFFF;*/
-  background-color: tomato;
-  max-width: 1200px;
+  background-color: #FFFFFF;
+}
+
+.container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -171,6 +173,7 @@ body {
 .inner-header {
   color: #ffffff;
   background: url("../images/inner.jpg") center top/100% no-repeat;
+  background-size: cover;
   background-color: #82B3D3;
 }
 
@@ -214,7 +217,8 @@ body {
 .button-reset {
   font-size: 16px;
   color: #FFFFFF;
-  background-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  ;
   border: none;
   text-transform: uppercase;
 }
@@ -226,8 +230,11 @@ body {
   text-transform: uppercase;
 }
 
-.select-control option {
+.select-control {
   font-family: inherit;
+}
+
+.select-control option {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -239,6 +246,7 @@ body {
 }
 
 .button-favourites {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -260,6 +268,12 @@ body {
   color: #333333;
 }
 
+.hotel-card-link:not(:nth-child(1)) {
+  color: #FFFFFF;
+  background: #756157;
+  border-radius: 4px;
+}
+
 .stars {
   background: url("../images/catalog-star.svg") 75px 0/18px 17px no-repeat;
 }
@@ -270,6 +284,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #333333;
+  background-color: #F2F2F2;
 }
 
 .pagination-link {
