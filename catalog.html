@@ -13,7 +13,6 @@
         <nav class="main-navigation">
           <a href="index.html">
             <img class="navigation-logo" src="images/logo.svg" width="140" height="70" alt="Логотип">
-            <!--логотип-->
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -50,7 +49,7 @@
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main-container main-inner">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -104,27 +103,35 @@
                   </li>
                 </ul>
               </fieldset>
-              <!--по цене урока еще не было-->
-              <button class="button-submit" type="submit">Применить</button>
-              <button class="button-reset" type="reset">Сбросить</button>
+              <fieldset class="catalog-filter-price">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <!--по цене урока еще не было-->
+                <input type="range" id="price" name="price" min="0" max="12000" step="1000">
+              </fieldset>
+              <div class="catalog-filter-buttons">
+                <button class="button-submit" type="submit">Применить</button>
+                <button class="button-reset" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </header>
-        <p class="result">Найдено гостиниц: <span>38</span></p>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap"> Сначала дешевые</option>
-          <option value="popular">Сначала популярные</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a class="button button-icon" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button button-flow" href="#">
-          <span class="visually-hidden">Показать потоком</span>
-        </a>
-        <a class="button button-list" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <div class="block-result">
+          <p class="result">Найдено гостиниц: <span>38</span></p>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap"> Сначала дешевые</option>
+            <option value="popular">Сначала популярные</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a class="button button-icon" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button button-flow" href="#">
+            <span class="visually-hidden">Показать потоком</span>
+          </a>
+          <a class="button button-list" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -222,7 +229,7 @@
         </ul>
       </main>
 
-      <section class="main-mail">
+      <section class="main-mail mail-catalog">
         <!--рассылка--добавить в css картинку через background-->
         <h2 class="main-title mail-text">Подпишитесь на рассылку</h2>
         <p class="main-subtitle mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
