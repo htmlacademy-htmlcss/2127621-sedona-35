@@ -18,6 +18,17 @@
   height: 100%;
 }
 
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
 body {
   width: 1280px;
   margin: 0 auto;
@@ -53,10 +64,11 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  list-style: none;
+  list-style-type: none;
   width: 560px;
   margin: 0;
   padding: 0;
@@ -65,13 +77,41 @@ body {
 .navigation-user-list {
   display: flex;
   justify-content: end;
+  flex-wrap: wrap;
   width: 360px;
   margin: 0;
   padding: 0;
   margin-left: auto;
 }
 
+.navigation-link {
+  display: block;
+  padding: 16px 20px;
+}
+
+.navigation-user-link {
+  display: block;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.navigation-user-link-button {
+  display: block;
+  width: 160px;
+  background: #756157;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 .navigation-link,
+.navigation-user-link,
 .pagination-link {
   text-decoration: none;
   color: inherit;
@@ -91,7 +131,7 @@ body {
 .navigation-user-list,
 .advantages-item,
 .footer-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .advantages-item {
@@ -296,7 +336,7 @@ body {
 .catalog-filter-list,
 .hotel-list,
 .pagination {
-  list-style: none;
+  list-style-type: none;
 }
 
 .breadcrumbs {
@@ -445,6 +485,9 @@ body {
   width: 1060px;
   margin: 0 auto;
   padding: 0;
+}
+.pagination-item {
+
 }
 
 .pagination-link {
