@@ -18,7 +18,7 @@
   height: 100%;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -27,14 +27,11 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 body {
   width: 1280px;
   margin: 0 auto;
-  /*стики футер*/
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -48,6 +45,14 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  /*стики футер*/
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main-header {
+  min-height: 64px;
 }
 
 .main-navigation {
@@ -60,6 +65,7 @@ body {
   width: 140px;
   margin-left: 70px;
   margin-right: 44px;
+  z-index: 2;
 }
 
 .navigation-list {
@@ -78,6 +84,7 @@ body {
   display: flex;
   justify-content: end;
   flex-wrap: wrap;
+  align-items: center;
   width: 360px;
   margin: 0;
   padding: 0;
@@ -106,6 +113,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   margin: 0;
+  margin-right: 70px;
   padding: 0;
   text-align: center;
 }
@@ -135,15 +143,12 @@ body {
 }
 
 .advantages-item {
-  height: 384px;
+  min-height: 384px;
 }
 
 .main-container {
-  /*стики футер*/
-  flex-grow: 1;
-  margin: 0 auto;
+  margin: 0;
   background-color: #FFFFFF;
-
 }
 
 .main-logo {
@@ -159,6 +164,7 @@ body {
 .main-logo-welcome {
   display: block;
   margin: 0 auto;
+  padding-top: 52px;
 }
 
 .advantages,
@@ -171,24 +177,44 @@ body {
 }
 
 .main-title {
-  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.main-subtitle {
+.advantages .main-title {
+  width: 620px;
   margin: 0 auto;
+  margin-top: 69px;
+  padding: 0;
+}
+
+.advantages .main-subtitle {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 90px;
+
+  padding: 0;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
 }
 
 .advantages-title {
+  margin: 0 auto;
+  margin-bottom: 62px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.additionally-advantages-list .advantages-title {
+  margin-bottom: 30px;
+}
+
+.advantages-desc {
+  margin: 0;
 }
 
 .advantages-card {
@@ -232,7 +258,24 @@ body {
   color: #333333;
 }
 
+.main-search .main-title {
+  margin-top: 96px;
+}
+
+.main-search .main-subtitle {
+  width: 592px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+
 .main-button {
+  margin-top: 54px;
+  margin-bottom: 96px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -252,8 +295,25 @@ body {
   text-align: center;
 }
 
-.mail-text {
+.main-mail {
   color: #ffffff;
+}
+
+.main-mail .main-title {
+  padding-top: 96px;
+  margin: 0;
+}
+
+.main-mail .main-subtitle {
+  width: 475px;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+.main-mail-form {
+  padding-top: 54px;
 }
 
 .main-mail-text {
@@ -268,6 +328,7 @@ body {
 
 .main-mail-button {
   font-family: inherit;
+  font-weight: 700;
   text-transform: uppercase;
   min-width: 232px;
   min-height: 52px;
@@ -279,14 +340,16 @@ body {
 }
 
 .page-footer {
+  min-height: 120px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background-color: #FFFFFF;
 }
 
 .footer-socials {
+  margin-top: 58px;
   margin-left: 82px;
   margin-right: 250px;
 }
@@ -294,8 +357,24 @@ body {
 .footer-list {
   width: 220px;
   padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  padding: 0;
+  min-width: 18px;
+  min-height: 16px;
+  margin-right: 26px;
+}
+
+.footer-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.footer-number {
+  margin-top: 45px;
 }
 
 .footer-number a {
@@ -307,6 +386,7 @@ body {
 }
 
 .footer-htmlacademy {
+  margin-top: 49px;
   margin-right: 70px;
   margin-left: auto;
 }
@@ -326,6 +406,7 @@ body {
   font-weight: 700;
   line-height: 78px;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .catalog-filter {
@@ -486,9 +567,6 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-.pagination-item {
-
-}
 
 .pagination-link {
   font-weight: 700;
@@ -504,10 +582,4 @@ body {
 .pagination-current {
   color: #000000;
   background: #F2F2F2;
-}
-
-.mail-catalog {}
-
-.visually-hidden {
-  /* visibility: hidden; */
 }
