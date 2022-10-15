@@ -45,7 +45,6 @@
           </ul>
         </nav>
       </header>
-
       <main class="main-container main-inner">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -114,20 +113,26 @@
         </header>
         <div class="block-result">
           <p class="result">Найдено гостиниц: <span>38</span></p>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap"> Сначала дешевые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <a class="button button-icon" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button button-flow" href="#">
-            <span class="visually-hidden">Показать потоком</span>
-          </a>
-          <a class="button button-list" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <div class="result-sort">
+            <div class="result-select-control">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap"> Сначала дешевые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
+            <div class="result-buttons">
+              <a class="button button-icon" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a class="button button-flow" href="#">
+                <span class="visually-hidden">Показать потоком</span>
+              </a>
+              <a class="button button-list" href="#">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </div>
+          </div>
         </div>
         <ul class="hotel-list">
           <li class="hotel-card">
@@ -216,17 +221,17 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+        <!--рассылка-->
+        <section class="main-mail mail-catalog">
+          <h2 class="main-title mail-text">Подпишитесь на рассылку</h2>
+          <p class="main-subtitle mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="main-mail-form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-mail-text" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            <button class="main-mail-button" type="submit">Подписаться
+            </button>
+          </form>
+        </section>
       </main>
-      <!--рассылка-->
-      <section class="main-mail mail-catalog">
-        <h2 class="main-title mail-text">Подпишитесь на рассылку</h2>
-        <p class="main-subtitle mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="main-mail-form" action="https://echo.htmlacademy.ru" method="get">
-          <input class="main-mail-text" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-          <button class="main-mail-button" type="submit">Подписаться
-          </button>
-        </form>
-      </section>
       <!--подвал-->
       <footer class="page-footer">
         <section class="footer-socials">

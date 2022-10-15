@@ -30,7 +30,6 @@
 }
 
 body {
-  width: 1280px;
   margin: 0 auto;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -80,6 +79,11 @@ body {
   padding: 0;
 }
 
+.navigation-link {
+  display: block;
+  padding: 16px 20px;
+}
+
 .navigation-user-list {
   display: flex;
   justify-content: end;
@@ -91,19 +95,18 @@ body {
   margin-left: auto;
 }
 
-.navigation-link {
-  display: block;
-  padding: 16px 20px;
-}
-
-.navigation-user-link {
-  display: block;
+.navigation-user-item {
   min-width: 30px;
   min-height: 30px;
 }
 
+.navigation-user-link {
+  display: block;
+}
+
 .navigation-user-link-button {
   display: block;
+  box-sizing: border-box;
   width: 160px;
   background: #756157;
   border-radius: 4px;
@@ -114,7 +117,7 @@ body {
   color: #FFFFFF;
   margin: 0;
   margin-right: 70px;
-  padding: 0;
+  padding: 8px 34px;
   text-align: center;
 }
 
@@ -313,12 +316,15 @@ body {
 }
 
 .main-mail-form {
+  display: flex;
+  width: 684px;
+  margin: 0 auto;
   padding-top: 54px;
 }
 
 .main-mail-text {
   font-family: inherit;
-  min-width: 452px;
+  width: 452px;
   min-height: 52px;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
@@ -330,13 +336,14 @@ body {
   font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
-  min-width: 232px;
+  width: 232px;
   min-height: 52px;
   font-size: 20px;
   color: #FFFFFF;
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
   border: none;
+  padding: 0;
 }
 
 .page-footer {
@@ -407,10 +414,14 @@ body {
   line-height: 78px;
   color: #FFFFFF;
   margin: 0;
+  padding: 35px 0 0 70px;
 }
 
 .catalog-filter {
   display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .breadcrumbs,
@@ -422,19 +433,32 @@ body {
 
 .breadcrumbs {
   display: flex;
+  margin: 0;
+  padding: 8px 0 0 70px;
+}
+
+.breadcrumbs-link {
+  margin-right: 30px;
+}
+
+.catalog-products {
+  padding-top: 40px;
 }
 
 .catalog-filter-group {
   width: 150px;
   margin: 0;
   padding: 0;
-  margin-left: 70px;
 }
 
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.catalog-filter-list {
+  padding: 0;
 }
 
 .control-input {
@@ -473,20 +497,41 @@ body {
 
 .block-result {
   width: 1060px;
+  min-height: 50px;
   margin: 0 auto;
+  padding-top: 50px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .result {
+  padding: 0;
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
+.result-sort {
+  display: flex;
+  justify-content: space-between;
+  width: 522px;
+}
+
 .select-control {
-  font-family: inherit;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  width: 292px;
+  height: 50px;
+  padding: 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .select-control option {
@@ -495,14 +540,35 @@ body {
   color: #333333;
 }
 
+.result-buttons {
+  width: 160px;
+  display: flex;
+}
+
+.result-buttons .button {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  /*временно для подсветки */
+  background-color: #333333;
+}
+
+.result-buttons .button:last-child {
+  margin-right: 0;
+}
+
 .hotel-list {
   width: 1060px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
 
+.hotel-card {
+  margin-top: 20px;
 }
 
 .hotel-list li {
@@ -516,7 +582,6 @@ body {
   color: #000000;
   text-decoration: none;
 }
-
 
 .button-favourites {
   font-family: inherit;
@@ -546,6 +611,8 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  padding: 16px 0;
+  margin: 0;
 }
 
 .stars {
@@ -563,12 +630,26 @@ body {
 
 .pagination {
   display: flex;
-  width: 1060px;
-  margin: 0 auto;
+  width: 400px;
+  margin: 40px 0 0 70px;
   padding: 0;
+  padding-bottom: 60px;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  padding: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
