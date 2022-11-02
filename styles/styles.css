@@ -446,11 +446,10 @@ li:nth-of-type(4) div {
   font-family: inherit;
   font-size: inherit;
   width: 452px;
-  min-height: 52px;
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
-  border: 0;
-  padding: 0 0 0 20px;
+  border: none;
+  padding: 14px 0 14px 20px;
 }
 
 .main-mail-button {
@@ -644,7 +643,7 @@ li:nth-of-type(4) div {
 }
 
 .catalog-filter-group {
-  width: 150px;
+  min-width: 150px;
   margin: 0;
   padding: 0;
   margin-bottom: 73px;
@@ -655,6 +654,8 @@ li:nth-of-type(4) div {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  width: 288px;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list {
@@ -668,30 +669,145 @@ li:nth-of-type(4) div {
   height: 24px;
 }
 
-.catalog-filter-item:first-child {
-  padding-top: 32px;
-}
-
 .control {
   font-family: inherit;
   line-height: 23px;
+  position: relative;
+  display: block;
+  padding: 0;
+  width: max-content;
 }
 
-.control-input {
-  margin-right: 16px;
+.control:hover .control-mark {
+  outline: 3px solid #83B3D3;
+  border-radius: 5px;
+}
+
+.control:hover .control-mark-radio {
+  outline: 3px solid #83B3D3;
+  border-radius: 50%;
+}
+
+.control-mark {
+  position: absolute;
   width: 20px;
   height: 20px;
   background: #FFFFFF;
   border-radius: 4px;
-  position: relative;
-  top: 4px;
+  top: 2px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  top: 2px;
+}
+
+.control-label {
+  font-family: inherit;
+  padding-left: 36px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background: url("../images/catalog-checkbox.svg") center no-repeat;
+}
+
+.control-input-radio[type="radio"]:checked + .control-mark-radio::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background: url("../images/catalog-radio.svg") center no-repeat;
 }
 
 .catalog-filter-price {
+  width: 288px;
   border: none;
   padding: 0;
   margin: 0;
+  margin-right: 70px;
 }
+
+.price {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 24px;
+  box-sizing: border-box;
+  width: 143px;
+  padding: 12px 20px;
+  margin: 0;
+  background: #F2F2F2;
+  border: none;
+  text-align: end;
+}
+
+.price::-webkit-outer-spin-button,
+.price::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.min-price {
+  border-radius: 4px 0 0 4px;
+}
+
+.max-price {
+  border-radius: 0 4px 4px 0;
+}
+
+/*
+.range {
+  margin: 0;
+  margin-top: 36px;
+  width: 288px;
+}
+*/
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 44px;
+  background-color: #757575;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
+
 
 .catalog-filter-buttons {
   display: flex;
@@ -804,6 +920,8 @@ li:nth-of-type(4) div {
   padding: 12px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+  background: url("../images/catalog-control.svg") 260px 20px / 12px 8px no-repeat;
 }
 
 .select-control option {
