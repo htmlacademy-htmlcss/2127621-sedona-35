@@ -182,6 +182,41 @@
         </a>
       </footer>
     </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="field-group">
+              <label class="date-in" for="date-in">Дата Заезда</label>
+              <input class="date-form-field field" type="date" value="" id="date-in" name="date-in" placeholder="27 апреля 2020">
+              <span class="date-in-comments">Мы не можем отправить Вас в прошлое</span>
+            </p>
+            <p class="field-group">
+              <label class="date-out" for="date-out">Дата Выезда</label>
+              <input class="date-form-field field" type="date" value="" id="date-out" name="date-in" placeholder="1 сентября 2023">
+              <span class="date-out-comments">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+            <p class="field-group">
+              <label class="guests" for="guests-adults">Взрослые</label>
+              <input class="field-guests" type="number" value="" id="guests-adults" name="guests-adults" placeholder="2">
+            </p>
+            <p class="field-group">
+              <label class="guests" for="guests-children">Дети</label>
+              <input class="field-guests" type="number" value="" id="guests-children" name="guests-children" placeholder="2">
+            </p>
+            <a class="modal-button" href="#">
+              <span class="modal-button-search">Найти</span>
+            </a>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
