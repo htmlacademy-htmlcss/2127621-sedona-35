@@ -192,26 +192,51 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="field-group">
-              <label class="date-in" for="date-in">Дата Заезда</label>
-              <input class="date-form-field field" type="date" value="" id="date-in" name="date-in" placeholder="27 апреля 2020">
-              <span class="date-in-comments">Мы не можем отправить Вас в прошлое</span>
+              <label class="date-in" for="date-in">Дата Заезда:</label>
+              <input class="date-form-field field" type="date" value="" id="date-in" name="date-in">
+              <span class="date-in-comments">Мы не можем отправить Вас в прошлое.</span>
             </p>
             <p class="field-group">
-              <label class="date-out" for="date-out">Дата Выезда</label>
-              <input class="date-form-field field" type="date" value="" id="date-out" name="date-in" placeholder="1 сентября 2023">
+              <label class="date-out" for="date-out">Дата Выезда:</label>
+              <input class="date-form-field field" type="date" value="" id="date-out" name="date-in">
               <span class="date-out-comments">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <p class="field-group">
-              <label class="guests" for="guests-adults">Взрослые</label>
-              <input class="field-guests" type="number" value="" id="guests-adults" name="guests-adults" placeholder="2">
+              <label class="guests" for="guests-adults">Взрослые:</label>
+              <button class="guests-adults-minus minus"><span class="visually-hidden">Уменьшить количество
+                  взрослых</span></button>
+              <input class="field-guests" type="number" value="" id="guests-adults" name="guests-adults"
+                placeholder="2">
+              <button class="guests-adults-plus plus"><span class="visually-hidden">Увеличить количество
+                  взрослых</span></button>
             </p>
             <p class="field-group">
-              <label class="guests" for="guests-children">Дети</label>
-              <input class="field-guests" type="number" value="" id="guests-children" name="guests-children" placeholder="2">
+              <label class="guests" for="guests-children">Дети:</label>
+              <span class="form-label">
+                <label class="form-label visually-hidden">Инфо</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
+                    </svg>
+                    <svg width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с Вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
+              <button class="guests-children-minus minus"><span class="visually-hidden">Уменьшить количество
+                  детей</span></button>
+              <input class="field-guests" type="number" value="" id="guests-children" name="guests-children"
+                placeholder="2">
+              <button class="guests-children-plus plus"><span class="visually-hidden">Увеличить количество
+                  детей</span></button>
             </p>
-            <a class="modal-button" href="#">
-              <span class="modal-button-search">Найти</span>
-            </a>
+            <button class="modal-button" type="submit"><span>Найти</span></button>
+            <!--<span class="modal-button-search">Найти</span>-->
           </form>
         </section>
       </div>
