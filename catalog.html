@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
     <div class="container">
+      <!--Хедер-->
       <header class="main-header">
         <nav class="main-navigation">
           <a href="index.html">
@@ -58,6 +61,7 @@
       <main class="main-container main-inner">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <!--Хлебные крошки-->
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
@@ -73,6 +77,7 @@
               <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
+          <!--Каталог-->
           <section class="catalog-products">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
@@ -134,8 +139,8 @@
               <fieldset class="catalog-filter-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range-wrapper-inputs">
-                  <input class="price min-price" type="number" name="min-price" value="" placeholder="от">
-                  <input class="price max-price" type="number" name="max-price" value="" placeholder="до">
+                  <input class="price min-price" type="number" name="min-price" value="" placeholder="0">
+                  <input class="price max-price" type="number" name="max-price" value="" placeholder="9000">
                 </div>
                 <div class="range">
                   <div class="range-scale">
@@ -176,6 +181,7 @@
             </div>
           </div>
         </div>
+        <!--Карточки отелей-->
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#" tabindex="-1">
@@ -246,6 +252,7 @@
             <p class="hotel-rating">Рейтинг: <span>5,0</span></p>
           </li>
         </ul>
+        <!--Пгинация-->
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current" href="#">1</a>
@@ -266,6 +273,7 @@
             <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
+        <!--Подписка-->
         <section class="main-mail mail-catalog">
           <h2 class="main-title mail-text">Подпишитесь на рассылку</h2>
           <p class="main-subtitle mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -276,6 +284,7 @@
           </form>
         </section>
       </main>
+      <!--Подвал-->
       <footer class="page-footer">
         <section class="footer-socials">
           <h2 class="visually-hidden">Как нас найти</h2>
