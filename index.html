@@ -129,7 +129,10 @@
           <h2 class="main-title mail-text">Подпишитесь на рассылку</h2>
           <p class="main-subtitle mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="main-mail-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="main-mail-text" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            <label>
+              <span class="visually-hidden">Введите Ваш email</span>
+              <input class="main-mail-text" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            </label>
             <button class="main-mail-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -175,6 +178,7 @@
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="footer-htmlacademy" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Сайт htmlacademy</span>
           <svg class="footer-htmlacademy-img" aria-hidden="true" focusable="false" width="115" height="34"
             viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -262,9 +266,10 @@
             <p class="field-group">
               <label class="guests" for="guests-children">Дети:</label>
               <span class="form-label">
-                <label class="form-label visually-hidden">Инфо</label>
+                <label class="form-label visually-hidden">Информация</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button">
+                    <span class="visually-hidden">Информация</span>
                     <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#83B3D3" />
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
