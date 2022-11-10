@@ -65,6 +65,7 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">На главную страницу</span>
                 <svg class="breadcrumbs-link-home" aria-hidden="true" focusable="false" width="12" height="12"
                   viewBox="0 0 13 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -139,14 +140,24 @@
               <fieldset class="catalog-filter-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range-wrapper-inputs">
-                  <input class="price min-price" type="number" name="min-price" value="" placeholder="0">
-                  <input class="price max-price" type="number" name="max-price" value="" placeholder="9000">
+                  <label>
+                    <span class="visually-hidden">Введите минимальную стоимость</span>
+                    <input class="price min-price" type="number" name="min-price" value="" placeholder="0">
+                  </label>
+                  <label>
+                    <span class="visually-hidden">Введите максимальную стоимость</span>
+                    <input class="price max-price" type="number" name="max-price" value="" placeholder="9000">
+                  </label>
                 </div>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 1px; width: 228px">
-                      <button type="button" class="range-toggle toggle-min"></button>
-                      <button type="button" class="range-toggle toggle-max"></button>
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Уменьшить стоимость</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Увеличить стоимость</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -279,7 +290,10 @@
           <h2 class="main-title mail-text">Подпишитесь на рассылку</h2>
           <p class="main-subtitle mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="main-mail-form" action="https://echo.htmlacademy.ru" method="get">
-            <input class="main-mail-text" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            <label>
+              <span class="visually-hidden">Введите Ваш email</span>
+              <input class="main-mail-text" type="email" name="newsletter-email" placeholder="">
+            </label>
             <button class="main-mail-button" type="submit">Подписаться
             </button>
           </form>
@@ -326,6 +340,7 @@
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="footer-htmlacademy" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Сайт htmlacademy</span>
           <svg class="footer-htmlacademy-img" aria-hidden="true" focusable="false" width="115" height="34"
             viewBox="0 0 115 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path
