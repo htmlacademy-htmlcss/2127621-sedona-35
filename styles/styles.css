@@ -69,6 +69,18 @@ body {
   width: 140px;
 }
 
+.navigation-logo:hover {
+  opacity: 0.9;
+}
+
+.navigation-logo:focus {
+  opacity: 0.6;
+}
+
+.navigation-logo:active {
+  opacity: 0.4;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -85,6 +97,18 @@ body {
 .navigation-link {
   display: block;
   padding: 20px 16px;
+}
+
+.navigation-link:not(.navigation-link-current):hover {
+  color: #756157;
+}
+
+.navigation-link:not(.navigation-link-current):focus {
+  color: #756157;
+}
+
+.navigation-link:not(.navigation-link-current):active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-current::after {
@@ -183,18 +207,15 @@ body {
 
 .navigation-user-link-button:hover {
   background: #615048;
-  border-radius: 4px;
 }
 
 .navigation-user-link-button:focus {
   background: #615048;
-  border-radius: 4px;
 }
 
 .navigation-user-link-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
-  border-radius: 4px;
 }
 
 .navigation-link,
@@ -980,6 +1001,7 @@ body {
 .breadcrumbs-item:not(:last-child)::after {
   content: "›";
   position: absolute;
+  top: 0;
   left: 25px;
 }
 
@@ -1009,17 +1031,18 @@ body {
 }
 
 .catalog-filter-item {
-  height: 24px;
+  min-height: 24px;
   padding: 0;
-  padding-bottom: 15px;
+  padding-bottom: 1px;
 }
 
 .control {
   position: relative;
   display: block;
-  width: max-content;
+  width: 220px;
   padding: 0;
-  font-family: inherit;
+  padding-bottom: 15px;
+  font-family: "PT Sans";
   line-height: 23px;
 }
 
@@ -1062,8 +1085,11 @@ body {
 }
 
 .control-label {
-  padding-left: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 175px;
   font-family: inherit;
+  padding-left: 36px;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {

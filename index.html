@@ -131,7 +131,7 @@
           <form class="main-mail-form" action="https://echo.htmlacademy.ru" method="post">
             <label>
               <span class="visually-hidden">Введите Ваш email</span>
-              <input class="main-mail-text" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+              <input class="main-mail-text" type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
             </label>
             <button class="main-mail-button" type="submit">Подписаться</button>
           </form>
@@ -199,7 +199,7 @@
             <p class="field-group">
               <label class="date-in" for="date-in">Дата Заезда:</label>
               <input class="date-form-field field" type="text" value="" id="date-in" name="date-in"
-                placeholder="27 апреля 2020">
+                placeholder="27 апреля 2020" required>
               <svg class="calendar" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15"
                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -228,7 +228,7 @@
             <p class="field-group">
               <label class="date-out" for="date-out">Дата Выезда:</label>
               <input class="date-form-field field" type="text" value="" id="date-out" name="date-in"
-                placeholder="1 сентября 2023">
+                placeholder="1 сентября 2023" required>
               <svg class="calendar" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15"
                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -258,8 +258,8 @@
               <label class="guests" for="guests-adults">Взрослые:</label>
               <button class="guests-adults-minus minus"><span class="visually-hidden">Уменьшить количество
                   взрослых</span></button>
-              <input class="field-guests" type="number" value="" id="guests-adults" name="guests-adults"
-                placeholder="2">
+              <input class="field-guests" type="number" value="" id="guests-adults" name="guests-adults" placeholder="2"
+                required>
               <button class="guests-adults-plus plus"><span class="visually-hidden">Увеличить количество
                   взрослых</span></button>
             </p>
@@ -286,7 +286,7 @@
               <button class="guests-children-minus minus"><span class="visually-hidden">Уменьшить количество
                   детей</span></button>
               <input class="field-guests" type="number" value="" id="guests-children" name="guests-children"
-                placeholder="2">
+                placeholder="2" required>
               <button class="guests-children-plus plus"><span class="visually-hidden">Увеличить количество
                   детей</span></button>
             </p>
