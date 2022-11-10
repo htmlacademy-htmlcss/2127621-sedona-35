@@ -321,13 +321,13 @@ body {
   font-weight: 700;
 }
 
-.advantages-list .advantages-item:nth-child(2) h3,
-.advantages-list .advantages-item:nth-child(3) h3,
-.advantages-list .advantages-item:nth-child(4) h3 {
+.advantages-item:nth-child(2) h3,
+.advantages-item:nth-child(3) h3,
+.advantages-item:nth-child(4) h3 {
   margin-top: 103px;
 }
 
-.additionally-advantages-list .advantages-title {
+.additionally-advantages-list .advantages-title:first-of-type {
   margin-top: 182px;
   margin-bottom: 30px;
 }
@@ -351,7 +351,7 @@ body {
   background: #82B3D3;
 }
 
-.advantages-list .advantages-item:nth-child(5) div {
+.advantages-item:nth-child(5) div {
   order: 1;
 }
 
@@ -550,15 +550,15 @@ body {
   margin-left: -1px;
 }
 
-.footer-item a:hover svg {
+.footer-item svg:hover {
   color: #68A2CA;
 }
 
-.footer-item a:focus svg {
+.footer-item svg:focus {
   color: #68A2CA;
 }
 
-.footer-item a:active svg {
+.footer-item svg:active {
   color: rgba(104, 162, 202, 0.3);
 }
 
